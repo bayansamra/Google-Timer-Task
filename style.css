@@ -1,7 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root{
     --footer-font-color:#919599;
@@ -25,7 +25,7 @@ body{
     font-size: 0.9rem;
     padding-left:20px;
     position: relative;
-    min-height: 1800px;
+    min-height: 200px;
 }
 
 /* Timer-StopWatch section start */
@@ -107,13 +107,13 @@ body{
     font-size: 1.8rem !important;
 }
 
-.lineTime{
+.linetime{
     position:absolute;
     left: -15px;
     bottom: -35px;
     border-bottom: 3px solid #8ab4f8;
-    /* width: 610px; */
-    width: 648px;
+    /* width: 648px; */
+    width: 0;
 }
 
 @media screen and (max-width:1200px) {
@@ -143,16 +143,17 @@ body{
     margin: 0 0.5rem;
     background-color: #bdc1c6;
     color: var(--btn-color);
-    font-size: 0.8rem;
+    font-size: 11px;
     font-weight: 600;
     cursor: pointer;
     border: none;
     border-radius: 1px;
-    /* transition: all 0.2s linear; */
+    transition: all 0.2s linear;
 }
 
 .timer-sec .timer-footer .reset-btn:hover{
     background-color: var(--footer-bg-color);
+    border: 1px solid black;
 }
 
 .timer-sec .timer-footer .start-btn{
@@ -160,14 +161,14 @@ body{
     margin: 0 0.5rem;
     background-color: #8ab4f8;
     color: var(--btn-color);
-    font-size: 0.8rem;
+    font-size: 11px;
     font-weight: 600;
     cursor: pointer;
     border: none;
     border-radius: 1px;
-    /* transition: all 0.2s linear; */
+    transition: all 0.2s linear;
 }
-.timer-sec .timer-footer .stop-btn{
+.timer-sec .timer-footer .stop-btn-time{
     padding: 0.4rem 0.9rem;
     margin: 0 0.5rem;
     display: none;
